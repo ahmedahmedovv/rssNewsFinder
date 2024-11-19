@@ -237,7 +237,7 @@ def perform_search(query=None):
 
 def get_search_terms():
     """Read search terms from search_terms.txt file."""
-    with open('search_terms.txt', 'r') as file:
+    with open('data/search_terms.txt', 'r') as file:
         # Read lines and remove empty lines and whitespace
         terms = [line.strip() for line in file.readlines() if line.strip()]
     return terms
